@@ -10,4 +10,4 @@ while True:
     input_state = GPIO.input(18)
     if input_state == False:
         print ("Button pressed")
-        subprocess.call(["/opt/vc/bin/tvservice -o"], shell=False)
+        subprocess.call(["/opt/vc/bin/tvservice", "-o"], shell=False)
